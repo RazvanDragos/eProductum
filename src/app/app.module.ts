@@ -16,6 +16,7 @@ import { NavigationBarComponent } from './components/navigation-bar/navigation-b
 import { EndingPageComponent } from './components/ending-page/ending-page.component';
 import { PcComponentsComponent } from './components/pc-components/pc-components.component';
 import { CartComponent } from './components/cart/cart.component';
+import { ProductsService } from './services/products-service.service';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,7 @@ import { CartComponent } from './components/cart/cart.component';
     BrowserAnimationsModule,
     MaterialModule
   ],
-  providers: [],
+  providers: [ProductsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

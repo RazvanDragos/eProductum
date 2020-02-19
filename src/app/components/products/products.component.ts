@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ProductsService } from 'src/app/services/products-service.service';
+import { Product } from 'src/app/interfaces/product';
 
 var topButton = document.getElementById("topButton");
 
@@ -9,14 +11,26 @@ var topButton = document.getElementById("topButton");
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
+  products: Product[];
+  errorMessage: string = '';
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private productService: ProductsService) { }
 
   ngOnInit() {
   }
 
+  getProducts() {
+    this.productService.getProducts().subscribe(
+      products => {
+        this.products = products;
+      },
+      error => this.errorMessage = <any>error
+    );
+  }
+
   goToDesktops(): void {
     console.log("Desktops");
+    console.log("Products: " + this.products);
   }
 
   goToLaptops(): void {
