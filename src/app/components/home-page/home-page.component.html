@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+  
+</head>
+<body>
+
+  <div class="logo"></div>
+
+  <form class="form-inline">
+    <input matInput placeholder="Cauta produse..">
+    <button mat-button>Cauta</button>
+  </form>
+
+  <form class="cart-profile-form">
+    <div class="cart-button" (click)="goToCart()">
+      <i class="fas fa-shopping-cart fa-2x"></i>
+    </div>
+    <div class="profile-button">
+      <i class="fas fa-user fa-2x"></i>
+    </div>
+  </form>
+
+  <div class="nav-menu" id="navMenu">
+    <div class="dropdown">
+      <button class="dropbtn">Electronice 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a>Telefoane</a>
+        <a>Laptopuri</a>
+        <a>Desktopuri</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn" (click)="goToComponente()">Componente PC 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a>Placi video</a>
+        <a>Procesoare</a>
+        <a>Placi de baza</a>
+        <a>Memorii</a>
+        <a>Stocare</a>
+        <a>Surse</a>
+        <a>Coolere</a>
+        <a>Carcase</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Periferice 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a>Mouse-uri</a>
+        <a>Tastaturi</a>
+        <a>Hard-diskuri externe</a>
+        <a>Camere web</a>
+        <a>Mouse pad-uri</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Accesorii 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a>Huse telefon</a>
+        <a>Incarcatoare</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Televizoare si monitoare 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a>Televizoare</a>
+        <a>Monitoare</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Servicii 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a>Asamblare PC</a>
+        <a>Update BIOS</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Info 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a>Contact</a>
+        <a>Forum</a>
+        <a>FAQ</a>
+        <a>Feedback</a>
+      </div>
+    </div>    
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" (click)="makeNavbarResponsive()">&#9776;</a>   
+  </div>
+  <products></products>
+</body>
+</html>

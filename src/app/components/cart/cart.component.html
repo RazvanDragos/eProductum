@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+  
+</head>
+<body>
+
+  <div class="logo" (click)="goToHomePage()"></div>
+
+  <form class="form-inline">
+    <input matInput placeholder="Cauta produse..">
+    <button mat-button>Cauta</button>
+  </form>
+
+  <form class="cart-profile-form">
+    <div class="cart-button" (click)="goToCart()">
+      <i class="fas fa-shopping-cart fa-2x"></i>
+    </div>
+    <div class="profile-button">
+      <i class="fas fa-user fa-2x"></i>
+    </div>
+  </form>
+
+  <div class="nav-menu" id="navMenu">
+    <div class="dropdown">
+      <button class="dropbtn">Electronice 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a>Telefoane</a>
+        <a>Laptopuri</a>
+        <a>Desktopuri</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn" (click)="goToComponente()">Componente PC 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a>Placi video</a>
+        <a>Procesoare</a>
+        <a>Placi de baza</a>
+        <a>Memorii</a>
+        <a>Stocare</a>
+        <a>Surse</a>
+        <a>Coolere</a>
+        <a>Carcase</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Periferice 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a>Mouse-uri</a>
+        <a>Tastaturi</a>
+        <a>Hard-diskuri externe</a>
+        <a>Camere web</a>
+        <a>Mouse pad-uri</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Accesorii 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a>Huse telefon</a>
+        <a>Incarcatoare</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Televizoare si monitoare 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a>Televizoare</a>
+        <a>Monitoare</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Servicii 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a>Asamblare PC</a>
+        <a>Update BIOS</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Info 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a>Contact</a>
+        <a>Forum</a>
+        <a>FAQ</a>
+        <a>Feedback</a>
+      </div>
+    </div>    
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" (click)="makeNavbarResponsive()">&#9776;</a>   
+  </div>
+
+  <div class="cart-title">Detaliile cosului</div>
+
+  <hr>
+
+  <div class="cart-container">
+        <table class="table">
+            <thead>
+                <th>Produs</th>
+                <th>Cant.</th>
+                <th>Pret</th>
+            </thead>
+            <tbody>
+                <tr>
+                <td>Nvidia RTX 2060 Super</td>
+                <td>1</td>
+                <td>2100 lei</td>
+                </tr>
+                <tr>
+                <td>Procesor AMD Ryzen 3600x</td>
+                <td>1</td>
+                <td>1300 lei</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div><h2>Pret total: 3400 lei <button mat-button class="checkout-button">Checkout</button></h2></div>
+
+        
+    </div>
+
+    <div class="ending-page">
+        <div class="ending-page-title">Contact</div>
+        <div>Email: eproductum@gmail.com</div>
+        <div>Phone: +40 (756) 119 231</div>
+        <div>Address: Strada Piata Mihai Viteazu, 1, Cluj-Napoca</div>
+        <div class="ending-page-end">©2019-2020 - Toate drepturile rezervate S.C. eProductum SRL</div>
+      </div>
+    
+      <div class="footer">
+        <p>© 2020 eProductum</p>
+      </div>
+
+
+</body>
+</html>
+

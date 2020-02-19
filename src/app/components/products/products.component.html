@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista produselor</title>
+</head>
+<body>
+    <div class="most-wanted-title">Cele mai vandute produse</div>
+
+    <hr>
+
+    <h2 (click)="goToPhones()">Telefoane</h2>
+
+    <main> 
+        <div class="card" (click)="openProduct('oneplus-7')">
+            <img class= "image" src="https://4.grgs.ro/images/products/1/7399/1864698/normal/7-octa-core-256gb-8gb-ram-dual-sim-4g-3-camere-mirror-gray-a416d36beeb4c7ffa6e121180f755d44.jpg">
+            <div class="product-title">OnePlus 7</div>
+            <div class="product-description">Detalii: </div>
+            <button mat-button class="product-button">Adauga in cos</button>
+        </div>  
+
+        <div class="card">
+            <img class= "image" src="https://1.grgs.ro/images/products/1/6599/1819432/normal/galaxy-a40-2019-full-hd-plus-infinity-u-display-octa-core-64gb-4gb-ram-dual-sim-4g-3-camere-25-mpx-plus-16-mpx-plus-5-mpx-fast-charge-black-347d34d8106d20e41e25d0253fefd50e.jpg">
+            <div class="product-title">Samsung Galaxy A40</div>
+            <div class="product-description">Detalii</div>
+            <button mat-button class="product-button">Adauga in cos</button>
+        </div>
+
+        <div class="card">
+            <img class= "image" src="https://5.grgs.ro/images/products/1/1728700/1732568/normal/pocophone-f1-snapdragon-845-28ghz-octa-core-64gb-6gb-ram-dual-sim-4g-tri-camera-20-mpx-plus-12-mpx-plus-5-mpx-quick-charge-30-baterie-4000-mah-liquid--3ce26e5ee7bdda330e1e906969b35969.jpg">
+            <div class="product-title">Pocophone f1</div>
+            <div class="product-description">Detalii</div>
+            <button mat-button class="product-button">Adauga in cos</button>
+        </div>
+
+        <div class="card">
+            <img class= "image" src="https://4.grgs.ro/images/products/1/6166/1946318/thumbnails/iphone-11-64gb-green-a09a969c3f5872e6c4e3c5635033da7d.jpg">
+            <div class="product-title">Iphone 11</div>
+            <div class="product-description">Detalii</div>
+            <button mat-button class="product-button">Adauga in cos</button>
+        </div>
+
+        <div class="card">
+            <img class= "image" src="https://1.grgs.ro/images/products/1/6748/1736244/thumbnails/iphone-xr-hexa-core-64gb-3gb-ram-single-sim-4g-black-d0b261ff85724d20ab4f389a82e5038d.jpg">
+            <div class="product-title">Iphone XR</div>
+            <div class="product-description">Detalii</div>
+            <button mat-button class="product-button">Adauga in cos</button>
+        </div>
+
+        <div class="card">
+            <img class= "image" src="https://2.grgs.ro/images/products/1/6166/1946494/thumbnails/iphone-11-pro-max-64gb-space-grey-eda757b184ce811b86801b3a47001fb4.jpg">
+            <div class="product-title">Iphone 11 PRO MAX</div>
+            <div class="product-description">Detalii</div>
+            <button mat-button class="product-button">Adauga in cos</button>
+        </div>
+    </main>
+
+    <h2 (click)="goToLaptops()">Laptop-uri</h2>
+
+    <main> 
+        <div class="card" (click)="openProduct('asus-rog-strix')">
+            <img class= "image" src="https://2.grgs.ro/images/products/1/1202/1928710/thumbnails/gaming-173-rog-strix-g731gu-fhd-144hz-procesor-intel-core-i7-9750h-12m-cache-up-to-450-ghz-8gb-ddr4-512gb-ssd-geforce-gtx-1660-ti-6gb-no-os-black-49e2105144711756ed5429746ca74c35.jpg">
+            <div class="product-title">ASUS ROG Strix</div>
+            <div class="product-description">Detalii</div>
+            <button mat-button class="product-button">Adauga in cos</button>
+        </div>  
+
+        <div class="card">
+            <img class= "image" src="https://5.grgs.ro/images/products/1/1960570/1968330/thumbnails/156-ideapad-s145-hd-procesor-intel-celeron-4205u-2m-cache-180-ghz-4gb-ddr4-128gb-ssd-gma-uhd-610-freedos-granite-black-de07f978c332a538ccf74935e360a47d.jpg">
+            <div class="product-title">Lenovo IdeaPad</div>
+            <div class="product-description">Detalii</div>
+            <button mat-button class="product-button">Adauga in cos</button>
+        </div>
+
+        <div class="card">
+            <img class= "image" src="https://3.grgs.ro/images/products/1/1202/1959694/thumbnails/gaming-156-tuf-fx505dd-fhd-procesor-amd-ryzen-5-3550h-4m-cache-up-to-370-ghz-8gb-ddr4-1tb-sshd-geforce-gtx-1050-3gb-no-os-black-ca765b9e480e4356cde9b440ea3c4104.jpg">
+            <div class="product-title">ASUS TUF Gaming</div>
+            <div class="product-description">Detalii</div>
+            <button mat-button class="product-button">Adauga in cos</button>
+        </div>
+
+        <div class="card">
+            <img class= "image" src="https://4.grgs.ro/images/products/1/8629/1927822/thumbnails/156-inspiron-3584-seria-3000-fhd-procesor-intel-core-i3-7020u-3m-cache-230-ghz-4gb-ddr4-1tb-radeon-520-2gb-linux-black-2yr-cis-35c7997d4ed4e2cb07e89f25e1dac547.jpg">
+            <div class="product-title">DELL Inspiration</div>
+            <div class="product-description">Detalii</div>
+            <button mat-button class="product-button">Adauga in cos</button>
+        </div>
+
+        <div class="card">
+            <img class= "image" src="https://4.grgs.ro/images/products/1/1703884/1878302/thumbnails/154-the-new-macbook-pro-15-retina-with-touch-bar-coffee-lake-6-core-i7-22ghz-16gb-ddr4-256gb-ssd-radeon-pro-555x-4gb-mac-os-high-sierra-space-grey-ro--c9443566b33e9fa4d7909e69ecd16d0e.jpg">
+            <div class="product-title">MacBook Pro 15</div>
+            <div class="product-description">Detalii</div>
+            <button mat-button class="product-button">Adauga in cos</button>
+        </div>
+
+        <div class="card">
+            <img class= "image" src="https://4.grgs.ro/images/products/1/736/1922918/thumbnails/133-macbook-pro-13-retina-with-touch-bar-coffee-lake-i5-14ghz-8gb-128gb-ssd-iris-plus-645-mac-os-mojave-silver-int-keyboard-23f4192d4fdbfd2ea51d5e081523bd39.jpg">
+            <div class="product-title">MacBook Pro 13</div>
+            <div class="product-description">Detalii</div>
+            <button mat-button class="product-button">Adauga in cos</button>
+        </div>
+    </main>
+
+    <h2 (click)="goToDesktops()">Desktop-uri</h2>
+
+    <main> 
+        <div class="card" (click)="openProduct('gaming-serpent')">
+            <img class= "image" src="https://4.grgs.ro/images/products/1/1684696/1928886/full/gaming-serpent-v8-powered-by-asus-intel-i5-8400-280ghz-coffee-lake-16gb-ddr4-1tb-hdd-plus-256gb-ssd-gtx-1060-6gb-gddr5-90673987f0f0adad7db219c8d12aa642.jpg">
+            <div class="product-title">Titlu</div>
+            <div class="product-description">Detalii</div>
+            <button mat-button class="product-button">Adauga in cos</button>
+        </div>  
+
+        <div class="card">
+            <img class= "image" src="https://5.grgs.ro/images/products/1/1094679/1862522/full/gaming-viking-intel-i3-7100-39ghz-kaby-lake-8gb-ddr4-1tb-hdd-gtx-1050-ti-oc-4gb-gddr5-865e973cfc7e14e708b517b6e9d1f892.jpg">
+            <div class="product-title">Titlu</div>
+            <div class="product-description">Detalii</div>
+            <button mat-button class="product-button">Adauga in cos</button>
+        </div>
+
+        <div class="card">
+            <img class= "image" src="https://3.grgs.ro/images/products/1/6763/1867182/full/gaming-raptor5-amd-amd-ryzen-5-2600-34ghz-6-nuclee-8gb-ddr4-960gb-ssd-gtx-1660-iluminare-rgb-6d205dec6f4a230bbf5820e8d09fc1b7.jpg">
+            <div class="product-title">Titlu</div>
+            <div class="product-description">Detalii</div>
+            <button mat-button class="product-button">Adauga in cos</button>
+        </div>
+
+        <div class="card">
+            <img class= "image" src="https://3.grgs.ro/images/products/1/3442/1974954/normal/gaming-mamba-50th-anniversary-amd-ryzen-7-3700x-36ghz-16gb-ddr4-1tb-ssd-rx-5700-xt-8gb-gddr6-iluminare-rgb-4febd404208b70710b28ea659642d793.jpg">
+            <div class="product-title">Titlu</div>
+            <div class="product-description">Detalii</div>
+            <button mat-button class="product-button">Adauga in cos</button>
+        </div>
+
+        <div class="card">
+            <img class= "image" src="https://4.grgs.ro/images/products/1/6166/1942674/full/gaming-arkay-amd-ryzen-5-3600-36ghz-6-nuclee-16gb-ddr4-1tb-ssd-rtx-2060-6gb-gddr6-iluminare-rgb-5648895633d0467016f63ae6d667c7e5.jpg">
+            <div class="product-title">Titlu</div>
+            <div class="product-description">Detalii</div>
+            <button mat-button class="product-button">Adauga in cos</button>
+        </div>
+
+        <div class="card">
+            <img class= "image" src="https://2.grgs.ro/images/products/1/2554/1937954/full/workstation-video-gamma-amd-ryzen-7-2700x-37ghz-16gb-ddr4-2tb-hdd-plus-480gb-ssd-plus-1tb-ssd-pcie-gtx-1660-6gb-gddr5-6e9a22f539c5d17ef9c7d148d7a68429.jpg">
+            <div class="product-title">Titlu</div>
+            <div class="product-description">Detalii</div>
+            <button mat-button class="product-button">Adauga in cos</button>
+        </div>
+    </main>
+
+    <div class="end-page-announce">
+        
+    </div>
+
+    <button class="topButton" (click)="goToTopOfThePage()" id="topButton">^</button>
+
+    <hr class="hr-after-products">
+
+    <div class="ending-page">
+        <div class="ending-page-title">Contact</div>
+        <div>Email: eproductum@gmail.com</div>
+        <div>Phone: +40 (756) 119 231</div>
+        <div>Address: Strada Piata Mihai Viteazu, 1, Cluj-Napoca</div>
+        <div class="ending-page-end">©2019-2020 - Toate drepturile rezervate S.C. eProductum SRL</div>
+      </div>
+
+    <div class="footer">
+        <p>© 2020 eProductum</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container">
+    <div class="sub-container">
+      <div class="login-form">
+        <div class="title">
+          Welcome!
+        </div>
+        <div class="input-fields">
+          <label class="label">Username</label>
+          <input matInput type="text" class="input">
+        </div>
+        <div class="input-fields">
+          <label class="label">Password</label>
+          <input type="password" class="input">
+        </div>
+        <div class="forgot">
+          <a href="#">Forgot Password?</a>
+        </div>
+        <button mat-button class="btn" (click)=login()>
+          login
+        </button>
+      </div>
+    </div>
+    <div class="footer">
+      <p>© 2020 eProductum</p>
+    </div>
+  </div>	
+</body>
+</html>

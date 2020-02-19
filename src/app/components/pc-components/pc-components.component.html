@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+  
+</head>
+<body>
+
+  <div class="logo" (click)="goToHomePage()"></div>
+
+  <form class="form-inline">
+    <input matInput placeholder="Cauta produse..">
+    <button mat-button>Cauta</button>
+  </form>
+
+  <form class="cart-profile-form">
+    <div class="cart-button" (click)="goToCart()">
+      <i class="fas fa-shopping-cart fa-2x"></i>
+    </div>
+    <div class="profile-button">
+      <i class="fas fa-user fa-2x"></i>
+    </div>
+  </form>
+
+  <div class="nav-menu" id="navMenu">
+    <div class="dropdown">
+      <button class="dropbtn">Electronice 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a>Telefoane</a>
+        <a>Laptopuri</a>
+        <a>Desktopuri</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Componente PC 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a>Placi video</a>
+        <a>Procesoare</a>
+        <a>Placi de baza</a>
+        <a>Memorii</a>
+        <a>Stocare</a>
+        <a>Surse</a>
+        <a>Coolere</a>
+        <a>Carcase</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Periferice 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a>Mouse-uri</a>
+        <a>Tastaturi</a>
+        <a>Hard-diskuri externe</a>
+        <a>Camere web</a>
+        <a>Mouse pad-uri</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Accesorii 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a>Huse telefon</a>
+        <a>Incarcatoare</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Televizoare si monitoare 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a>Televizoare</a>
+        <a>Monitoare</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Servicii 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a>Asamblare PC</a>
+        <a>Update BIOS</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Info 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a>Contact</a>
+        <a>Forum</a>
+        <a>FAQ</a>
+        <a>Feedback</a>
+      </div>
+    </div>    
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" (click)="makeNavbarResponsive()">&#9776;</a>   
+  </div>
+
+  <!-- title bar -->
+
+  <div class="page-title">Componente PC</div>
+
+  <hr>
+
+  <div class="container">
+    <div class="buttons-container">
+        <button mat-button class="category-button">Placi video</button> 
+        <button mat-button class="category-button">Procesoare</button> 
+        <button mat-button class="category-button">Placi de baza</button> 
+        <button mat-button class="category-button">Memorii</button> 
+        <button mat-button class="category-button">Stocare</button> 
+        <button mat-button class="category-button">Surse</button> 
+        <button mat-button class="category-button">Coolere</button> 
+        <button mat-button class="category-button">Carcase</button> 
+    </div>
+
+    <div class="products-elements">
+            <h2>Placi video</h2>
+
+            <main> 
+                <div class="card">
+                    <img class= "product-image" src="https://4.grgs.ro/images/products/1/6166/1950114/full/radeon-rx-5700-xt-nitro-plus-8gb-gddr6-256-bit-0baf7710675da4146a81ef7a744e403a.jpg">
+                    <div class="product-title">Nvidia rtx 2060</div>
+                    <div class="product-description">Detalii: </div>
+                    <button mat-button class="product-button">Adauga in cos</button>
+                </div>  
+        
+                <div class="card">
+                    <img class= "product-image" src="https://4.grgs.ro/images/products/1/6166/1950114/full/radeon-rx-5700-xt-nitro-plus-8gb-gddr6-256-bit-0baf7710675da4146a81ef7a744e403a.jpg">
+                    <div class="product-title">Radeon rx 5700 xt</div>
+                    <div class="product-description">Detalii</div>
+                    <button mat-button class="product-button">Adauga in cos</button>
+                </div>
+        
+                <div class="card">
+                    <img class= "product-image" src="https://3.grgs.ro/images/products/1/1236/1852342/full/geforce-gtx-1650-twin-x2-oc-4gb-gddr5-128-bit-27489b90db42dbedede5ee2f38a47aa7.jpg">
+                    <div class="product-title">Inno Nvidia rtx 2060</div>
+                    <div class="product-description">Detalii</div>
+                    <button mat-button class="product-button">Adauga in cos</button>
+                </div>
+        
+                <div class="card">
+                    <img class= "product-image" src="https://3.grgs.ro/images/products/1/6622/1929538/full/radeon-rx-5700-xt-pulse-8gb-gddr6-256-bit-dbbdb38a63b63e529cd0c841e0a1a9f9.jpg">
+                    <div class="product-title">Sapphire Radeon rx 5700</div>
+                    <div class="product-description">Detalii</div>
+                    <button mat-button class="product-button">Adauga in cos</button>
+                </div>
+
+            </main>
+        
+            <h2>Procesoare</h2>
+        
+            <main> 
+                <div class="card">
+                    <img class= "product-image" src="https://4.grgs.ro/images/products/1/1275/1893874/full/ryzen-5-3600x-38ghz-box-5ad7c8789ba84306fa9295e6765cbcf3.png">
+                    <div class="product-title">AMD Ryzen 5 3600x</div>
+                    <div class="product-description">Detalii</div>
+                    <button mat-button class="product-button">Adauga in cos</button>
+                </div>  
+        
+                <div class="card">
+                    <img class= "product-image" src="https://1.grgs.ro/images/products/1/1779504/1786592/full/coffee-lake-core-i5-9400f-290ghz-box-37cbbdfc0277fda542a2ecd47ee75ece.png">
+                    <div class="product-title">Intel Core i5</div>
+                    <div class="product-description">Detalii</div>
+                    <button mat-button class="product-button">Adauga in cos</button>
+                </div>
+        
+                <div class="card">
+                    <img class= "product-image" src="https://3.grgs.ro/images/products/1/1737700/1748188/full/coffee-lake-core-i7-9700k-360ghz-box-ea821ca2dc19eaa085523051b4d851ba.jpg">
+                    <div class="product-title">Intel Core i7</div>
+                    <div class="product-description">Detalii</div>
+                    <button mat-button class="product-button">Adauga in cos</button>
+                </div>
+        
+                <div class="card">
+                    <img class= "product-image" src="https://5.grgs.ro/images/products/1/1275/1893866/full/ryzen-7-3800x-39ghz-box-7ecb4b74246bfd8b3bc658cc463f1d52.png">
+                    <div class="product-title">AMD Ryzen 7 3700x</div>
+                    <div class="product-description">Detalii</div>
+                    <button mat-button class="product-button">Adauga in cos</button>
+                </div>
+
+            </main>
+        
+            <h2>Placi de baza</h2>
+        
+            <main> 
+                <div class="card">
+                    <img class= "product-image" src="https://3.grgs.ro/images/products/1/3944/1897594/full/aorus-x570-elite-ef9f4e551611d74ff8b8b450f094e3e2.jpg">
+                    <div class="product-title">Gigabyte Aorus x570</div>
+                    <div class="product-description">Detalii</div>
+                    <button mat-button class="product-button">Adauga in cos</button>
+                </div>  
+        
+                <div class="card">
+                    <img class= "product-image" src="https://3.grgs.ro/images/products/1/1703884/1719992/full/aorus-b450-pro-19da495dbc566d6570bb5468d4854921.jpg">
+                    <div class="product-title">Gigabyte Aorus b450</div>
+                    <div class="product-description">Detalii</div>
+                    <button mat-button class="product-button">Adauga in cos</button>
+                </div>
+        
+                <div class="card">
+                    <img class= "product-image" src="https://5.grgs.ro/images/products/1/1899326/1903422/full/x570-phantom-gaming-4-e2fb54dbd796ece51d2edf660c63be55.jpg">
+                    <div class="product-title">ASRock x570</div>
+                    <div class="product-description">Detalii</div>
+                    <button mat-button class="product-button">Adauga in cos</button>
+                </div>
+        
+                <div class="card">
+                    <img class= "product-image" src="https://5.grgs.ro/images/products/1/1899326/1903422/full/x570-phantom-gaming-4-e2fb54dbd796ece51d2edf660c63be55.jpg">
+                    <div class="product-title">ASRock b450 Pro </div>
+                    <div class="product-description">Detalii</div>
+                    <button mat-button class="product-button">Adauga in cos</button>
+                </div>
+
+            </main>
+
+            <h2>Memorii</h2>
+        
+            <main> 
+                <div class="card">
+                    <img class= "product-image" src="https://5.grgs.ro/images/products/1/812812/1107423/full/fury-black-4gb-ddr4-2400mhz-cl15-c2a2c6e3bca554232e7a161e190f4c23.jpg">
+                    <div class="product-title">HyperX Fury Black 16GB</div>
+                    <div class="product-description">Detalii</div>
+                    <button mat-button class="product-button">Adauga in cos</button>
+                </div>  
+        
+                <div class="card">
+                    <img class= "product-image" src="https://5.grgs.ro/images/products/1/812812/1107423/full/fury-black-4gb-ddr4-2400mhz-cl15-c2a2c6e3bca554232e7a161e190f4c23.jpg">
+                    <div class="product-title">HyperX Fury Black 8GB</div>
+                    <div class="product-description">Detalii</div>
+                    <button mat-button class="product-button">Adauga in cos</button>
+                </div>
+        
+                <div class="card">
+                    <img class= "product-image" src="https://5.grgs.ro/images/products/1/812812/1107423/full/fury-black-4gb-ddr4-2400mhz-cl15-c2a2c6e3bca554232e7a161e190f4c23.jpg">
+                    <div class="product-title">HyperX Fury Black 4GB</div>
+                    <div class="product-description">Detalii</div>
+                    <button mat-button class="product-button">Adauga in cos</button>
+                </div>
+        
+                <div class="card">
+                    <img class= "product-image" src="https://5.grgs.ro/images/products/1/812812/1107423/full/fury-black-4gb-ddr4-2400mhz-cl15-c2a2c6e3bca554232e7a161e190f4c23.jpg">
+                    <div class="product-title">HyperX Fury Black 32GB</div>
+                    <div class="product-description">Detalii</div>
+                    <button mat-button class="product-button">Adauga in cos</button>
+                </div>
+
+            </main>
+
+            <h2>Stocare</h2>
+        
+            <main> 
+                <div class="card" >
+                    <img class= "product-image" src="https://4.grgs.ro/images/products/1/1427502/1487710/full/a400-120gb-sata-iii-25-inch-ace5ac38fb969418fdf46f467226e385.jpg">
+                    <div class="product-title">Kingston A400 480GB </div>
+                    <div class="product-description">Detalii</div>
+                    <button mat-button class="product-button">Adauga in cos</button>
+                </div>  
+        
+                <div class="card">
+                    <img class= "product-image" src="https://1.grgs.ro/images/products/1/1594546/1607930/full/s700-pro-256gb-sata-iii-m2-2280-846b3968de632478734a3ec5b81ffa51.jpg">
+                    <div class="product-title">HP S700 120GB</div>
+                    <div class="product-description">Detalii</div>
+                    <button mat-button class="product-button">Adauga in cos</button>
+                </div>
+        
+                <div class="card">
+                    <img class= "product-image" src="https://4.grgs.ro/images/products/1/1427502/1487710/full/a400-120gb-sata-iii-25-inch-ace5ac38fb969418fdf46f467226e385.jpg">
+                    <div class="product-title">Kingston A400 720GB </div>
+                    <div class="product-description">Detalii</div>
+                    <button mat-button class="product-button">Adauga in cos</button>
+                </div>
+        
+                <div class="card">
+                    <img class= "product-image" src="https://4.grgs.ro/images/products/1/1416578/1763036/full/green-480gb-sata-iii-25-inch-dc73907e4fd023cd32eef8f27aac1de8.jpg">
+                    <div class="product-title">WD Green 480GB</div>
+                    <div class="product-description">Detalii</div>
+                    <button mat-button class="product-button">Adauga in cos</button>
+                </div>
+
+            </main>
+
+            <h2>Surse</h2>
+        
+            <main> 
+                <div class="card">
+                    <img class= "product-image" src="https://5.grgs.ro/images/products/1/2/93163/full/s12ii-520-bronze-520w-0a90da652b92a50c949fcbd30e53bd34.jpg">
+                    <div class="product-title">Seasonic 520W</div>
+                    <div class="product-description">Detalii</div>
+                    <button mat-button class="product-button">Adauga in cos</button>
+                </div>  
+        
+                <div class="card">
+                    <img class= "product-image" src="https://1.grgs.ro/images/products/1/1173769/1253743/full/woden-80-plus-gold-650-w-ff0491d48b12604c3bdc0d0f05b5b25d.jpg">
+                    <div class="product-title">nJoy Woden 650W</div>
+                    <div class="product-description">Detalii</div>
+                    <button mat-button class="product-button">Adauga in cos</button>
+                </div>
+        
+                <div class="card">
+                    <img class= "product-image" src="https://4.grgs.ro/images/products/1/1541210/1585866/full/smart-rgb-80-plus-500w-849905244d7ae33ae7c9be0713f287e7.jpg">
+                    <div class="product-title">Smart RGB 500W</div>
+                    <div class="product-description">Detalii</div>
+                    <button mat-button class="product-button">Adauga in cos</button>
+                </div>
+        
+                <div class="card">
+                    <img class= "product-image" src="https://4.grgs.ro/images/products/1/1798/1885066/full/enigma-g2-80-plus-gold-750w-941be11766480d371929f52af4889675.jpg">
+                    <div class="product-title">Riotoro Enigma 750W</div>
+                    <div class="product-description">Detalii</div>
+                    <button mat-button class="product-button">Adauga in cos</button>
+                </div>
+
+            </main>
+
+            <h2>Coolere</h2>
+        
+            <main> 
+                <div class="card">
+                    <img class= "product-image" src="https://2.grgs.ro/images/products/1/4/369867/full/gammaxx300-a3dc52ee426b5980936d02dbb2a88749.jpg">
+                    <div class="product-title">Deepcool Gamaxx 300</div>
+                    <div class="product-description">Detalii</div>
+                    <button mat-button class="product-button">Adauga in cos</button>
+                </div>  
+        
+                <div class="card">
+                    <img class= "product-image" src="https://3.grgs.ro/images/products/1/750014/843433/full/nh-d15-5c916d1a22d2bacc987b8d116f39d884.jpg">
+                    <div class="product-title">Noctua NH-D15</div>
+                    <div class="product-description">Detalii</div>
+                    <button mat-button class="product-button">Adauga in cos</button>
+                </div>
+        
+                <div class="card">
+                    <img class= "product-image" src="https://3.grgs.ro/images/products/1/4/1530403/full/deepcool-gammaxx-300-r-0d3128c9b2ffc1cab419abbfdb628831.jpg">
+                    <div class="product-title">Deepcool Gamaxx 300R</div>
+                    <div class="product-description">Detalii</div>
+                    <button mat-button class="product-button">Adauga in cos</button>
+                </div>
+        
+                <div class="card">
+                    <img class= "product-image" src="https://3.grgs.ro/images/products/1/2863/1838564/full/cooler-procesor-arctic-freezer-34-esports-red-8a7a720b8fa3bf91d234be007239658b.jpg">
+                    <div class="product-title">Thermaflow RGB 500</div>
+                    <div class="product-description">Detalii</div>
+                    <button mat-button class="product-button">Adauga in cos</button>
+                </div>
+
+            </main>
+
+            <h2>Carcase</h2>
+        
+            <main> 
+                <div class="card">
+                    <img class= "product-image" src="https://4.grgs.ro/images/products/1/1684696/1928886/full/gaming-serpent-v8-powered-by-asus-intel-i5-8400-280ghz-coffee-lake-16gb-ddr4-1tb-hdd-plus-256gb-ssd-gtx-1060-6gb-gddr5-90673987f0f0adad7db219c8d12aa642.jpg">
+                    <div class="product-title">Titlu</div>
+                    <div class="product-description">Detalii</div>
+                    <button mat-button class="product-button">Adauga in cos</button>
+                </div>  
+        
+                <div class="card">
+                    <img class= "product-image" src="https://5.grgs.ro/images/products/1/1094679/1862522/full/gaming-viking-intel-i3-7100-39ghz-kaby-lake-8gb-ddr4-1tb-hdd-gtx-1050-ti-oc-4gb-gddr5-865e973cfc7e14e708b517b6e9d1f892.jpg">
+                    <div class="product-title">Titlu</div>
+                    <div class="product-description">Detalii</div>
+                    <button mat-button class="product-button">Adauga in cos</button>
+                </div>
+        
+                <div class="card">
+                    <img class= "product-image" src="https://3.grgs.ro/images/products/1/6763/1867182/full/gaming-raptor5-amd-amd-ryzen-5-2600-34ghz-6-nuclee-8gb-ddr4-960gb-ssd-gtx-1660-iluminare-rgb-6d205dec6f4a230bbf5820e8d09fc1b7.jpg">
+                    <div class="product-title">Titlu</div>
+                    <div class="product-description">Detalii</div>
+                    <button mat-button class="product-button">Adauga in cos</button>
+                </div>
+        
+                <div class="card">
+                    <img class= "product-image" src="https://4.grgs.ro/images/products/1/6166/1942674/full/gaming-arkay-amd-ryzen-5-3600-36ghz-6-nuclee-16gb-ddr4-1tb-ssd-rtx-2060-6gb-gddr6-iluminare-rgb-5648895633d0467016f63ae6d667c7e5.jpg">
+                    <div class="product-title">Titlu</div>
+                    <div class="product-description">Detalii</div>
+                    <button mat-button class="product-button">Adauga in cos</button>
+                </div>
+
+            </main>
+        </div>
+        
+    
+  </div>
+
+  <div class="ending-page">
+    <div class="ending-page-title">Contact</div>
+    <div>Email: eproductum@gmail.com</div>
+    <div>Phone: +40 (756) 119 231</div>
+    <div>Address: Strada Piata Mihai Viteazu, 1, Cluj-Napoca</div>
+    <div class="ending-page-end">©2019-2020 - Toate drepturile rezervate S.C. eProductum SRL</div>
+  </div>
+
+  <div class="footer">
+    <p>© 2020 eProductum</p>
+  </div>
+
+
+</body>
+</html>
